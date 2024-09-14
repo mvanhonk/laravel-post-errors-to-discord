@@ -12,10 +12,7 @@ This package provides a custom logger for Laravel that sends error logs to a Dis
 2. Add the configuration from `logging_config.php` to your `config/logging.php` file.
 3. Add the environment variables from `.env.example` to your `.env` file and fill in the values.
 4. Install Guzzle if you haven't already: `composer require guzzlehttp/guzzle`
-
-## Usage
-
-Update your exception handler (`app/Exceptions/Handler.php` or `bootstrap/app.php` for Laravel 11+) to use the Discord logger:
+5. Update your exception handler (`app/Exceptions/Handler.php` or `bootstrap/app.php` for Laravel 11+) to use the Discord logger:
 
 ```php
 use Illuminate\Support\Facades\Log;
